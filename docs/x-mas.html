@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행복한 크리스마쓰~~</title>
+
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/156725.png">
+    <meta property="og:image" content="https://postfiles.pstatic.net/MjAyMDEyMjJfNDgg/MDAxNjA4NjI5MDI3MzIw.53PtHq2LGlM5sL14lRiFcH2i3IwjxgCVZzL2btRdYTog.hmshN-jhuwCNFPz2wLRKrvGHMSGEIb8XPXdRBNK8Uvsg.JPEG.eezuei/Zoom_%ED%9A%8C%EC%9D%98_%EC%B0%B8%EA%B0%80%EC%9E%90_ID__146636_2020-12-22_%EC%98%A4%ED%9B%84_6_11_07.jpg?type=w966">
+<meta property="og:title" content="MERRY CHRISTMAS">
+<meta property="og:description" content="HO! HO! HO!">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">   
+    <style>
+        body {
+            background-color: #9b070f;
+            font-family: 'Langar', cursive;
+        }
+
+        .envelope {
+            width: 400px; height: 400px;
+            background-image:url('https://media4.giphy.com/media/l1J9LoQreOkr4qQBG/giphy.gif') ;
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+        
+            cursor:pointer;
+        }
+
+        .envelope-msg {
+            text-align: center;
+            color: white;
+        }
+        .letter-close{
+            display:block;
+        }
+        .letter-open{
+            display:none;
+        }
+        .rtan{
+            background-color:white;
+
+            width: 300px;
+            height:300px;
+
+            background-image: url('https://i.pinimg.com/originals/e2/8f/04/e28f04da9e874039356733414014eeb9.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+
+            box-shadow:0px 0px 10px 0px rgb(252, 248, 4);
+            cursor:pointer;
+        }
+        h1{
+            color:white;
+            text-align:center;
+            margin-top:30px auto 30px auto;
+           
+            font-size : 20px;
+            
+        }
+        .messagebox{
+            background-color:ivory;
+
+            width:300px;
+            margin:auto;
+
+            color:brown;
+            padding:30px;
+            font-family: 'Black And White Picture', sans-serif;
+
+            font-size:20px;
+            line-height:30px;
+
+            box-shadow:0px 0px 10px 0px white;
+        }
+        .from{
+            text-align:right;
+            margin-bottom:0;
+        }
+        .easter{
+            font-size:10px;
+            text-align:right;
+            margin-bottom:0;
+        }
+        @media screen and (max-width: 760px) {
+            .messagebox{
+                width:400px;
+                padding:20px;
+            }
+            .rtan{
+               
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+            h1{
+                font-size: 20px;
+            }
+            .envelope{
+                margin:150px auto 0px auto;
+            }
+        }
+
+
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        function go_rtan() {
+            alert('🎵🎁🎵');
+            window.location.href='https://youtube.com/playlist?list=PL78KGIqqmpeC3dbAzS4lm17T7rw-pDX2T'
+        } 
+    </script>    
+   
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">☝</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+    <h1>merry christmas and a happy new year</h1>
+    <div class="messagebox">
+        안녕하십니까 허이정입니다 <br />
+        코로나 시대의 크리스마스를 기념하여 <br />
+        이런 것을 한 번 만들어보게 되었습니다. <br />
+        모두들 건강 잘 챙기시고 <br />
+        언젠가..안전한 세상이 오면 만납시다. <br />
+        줌으로는 언제든지 마음껏 만나요. ^^<br />
+        <p class="from">2020년의 크리스마스 </p>
+        <p class="easter"> 숨겨진 선물이 있어요🎁</p>
+    </div>
+    </div>
+    
+</body>
+
+</html>
