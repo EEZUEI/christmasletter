@@ -14,7 +14,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet"> 
+    
+    <!-- sound -->
+<audio id='audio_play' src='./We Wish You a Merry Christmas.mp3'></audio> 
+<script type="text/javascript"> 
+function play() { 
+    var audio = document.getElementById('audio_play'); 
+    if (audio.paused) { 
+        audio.play(); 
+    }else{ 
+        audio.pause(); 
+        audio.currentTime = 0 
+    } 
+    
+} 
+</script>
     <style>
         body {
             background-color: #9b070f;
@@ -54,9 +69,9 @@
 
             margin: 100px auto 0px auto;
 
-
-            box-shadow:0px 0px 10px 0px rgb(252, 248, 4);
             cursor:pointer;
+            box-shadow:0px 0px 10px 0px rgb(252, 248, 4);
+            
         }
         h1{
             color:white;
@@ -67,10 +82,10 @@
             
         }
         .messagebox{
+            float:left;
             background-color:ivory;
-
             width:300px;
-            margin:auto;
+            margin:0 auto 0 auto;
 
             color:brown;
             padding:30px;
@@ -81,6 +96,20 @@
 
             box-shadow:0px 0px 10px 0px white;
         }
+        .treeani{
+            width:440px;
+            height:250px;
+            float:left;
+            margin-top:40px;
+            cursor:pointer;
+        }
+        .treeanni{
+            float:left;
+            width:440px;
+            height:250px;
+            cursor:pointer;
+            margin-top:40px;
+        }
         .from{
             text-align:right;
             margin-bottom:0;
@@ -89,20 +118,21 @@
             font-size:10px;
             text-align:right;
             margin-bottom:0;
+            cursor:pointer;
         }
         @media screen and (max-width: 760px) {
             .messagebox{
-                width:400px;
+                width:350px;
                 padding:20px;
             }
             .rtan{
                
-                width: 150px;
-                height: 150px;
-                margin: 70px auto 0px auto;
+                width: 200px;
+                height: 200px;
+                margin: 60px auto 30px auto;
             }
             h1{
-                font-size: 20px;
+                font-size: 15px; 
             }
             .envelope{
                 margin:150px auto 0px auto;
@@ -117,6 +147,7 @@
         function open_letter() {
             document.getElementsByClassName("letter-close")[0].style.display = 'none'
             document.getElementsByClassName("letter-open")[0].style.display = 'block'
+            
         }
         function go_rtan() {
             alert('🎵🎁🎵');
@@ -133,8 +164,9 @@
     </div>
 
     <div class="letter-open">
-        <div class="rtan" onclick="go_rtan()"></div>
+        <div class="rtan" ></div>
     <h1>merry christmas and a happy new year</h1>
+    <img class="treeani" onclick="play()" src='ddddstet.png'>
     <div class="messagebox">
         안녕하십니까 허이정입니다 <br />
         코로나 시대의 크리스마스를 기념하여 <br />
@@ -143,8 +175,10 @@
         언젠가..안전한 세상이 오면 만납시다. <br />
         줌으로는 언제든지 마음껏 만나요. ^^<br />
         <p class="from">2020년의 크리스마스 </p>
-        <p class="easter"> 숨겨진 선물이 있어요🎁</p>
+        <p class="easter" > 숨겨진 선물이 있어요🎄</p>
     </div>
+    <img class="treeanni" onclick="go_rtan()" src='cfhd.png'>
+    
     </div>
     
 </body>
