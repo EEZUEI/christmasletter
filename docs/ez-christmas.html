@@ -67,9 +67,9 @@ function play() {
             background-size: cover;
             background-position: center;
 
-            margin: 100px auto 0px auto;
+            margin: 80px auto 0px auto;
 
-            cursor:pointer;
+            
             box-shadow:0px 0px 10px 0px rgb(252, 248, 4);
             
         }
@@ -85,10 +85,10 @@ function play() {
             float:left;
             background-color:ivory;
             width:300px;
-            margin:0 auto 0 auto;
+            margin:0 auto 0 10px;
 
             color:brown;
-            padding:30px;
+            padding:20px;
             font-family: 'Black And White Picture', sans-serif;
 
             font-size:20px;
@@ -115,10 +115,20 @@ function play() {
             margin-bottom:0;
         }
         .easter{
+            float:left;
             font-size:10px;
             text-align:right;
-            margin-bottom:0;
+            margin:0 0 0 0;
+            line-height:15px;
+            
+        }
+        .paper{
+            float:left;
+            font-size:15px;
+            text-align:left;
+            margin:0 0 0 0;
             cursor:pointer;
+            color:blueviolet;
         }
         @media screen and (max-width: 760px) {
             .messagebox{
@@ -153,6 +163,9 @@ function play() {
             alert('🎵🎁🎵');
             window.location.href='https://youtube.com/playlist?list=PL78KGIqqmpeC3dbAzS4lm17T7rw-pDX2T'
         } 
+        function paper() {
+            window.location.href='https://rollingpaper.site/rolls/414189?editable=true'
+        }
     </script>    
    
 </head>
@@ -169,13 +182,14 @@ function play() {
     <img class="treeani" onclick="play()" src='ddddstet.png'>
     <div class="messagebox">
         안녕하십니까 허이정입니다 <br />
-        코로나 시대의 크리스마스를 기념하여 <br />
+        크리스마스를 기념하여 <br />
         이런 것을 한 번 만들어보게 되었습니다. <br />
         모두들 건강 잘 챙기시고 <br />
-        언젠가..안전한 세상이 오면 만납시다. <br />
-        줌으로는 언제든지 마음껏 만나요. ^^<br />
+        언젠가...안전한 세상이 오면 만납시다. <br />
+        줌으로는 언제든지 마음껏 만나요 ^^<br />
         <p class="from">2020년의 크리스마스 </p>
-        <p class="easter" > 숨겨진 선물이 있어요🎄</p>
+        <p class='paper' onclick="paper()">(여기) 누르면 방명록 같은 게 있으니<br>한 번 놀러오십쇼*^^*</p>
+        <p class="easter" ><br><br>양 옆의 🎄,,<br>눌러보고 싶지 않나요?</p>
     </div>
     <img class="treeanni" onclick="go_rtan()" src='cfhd.png'>
     
