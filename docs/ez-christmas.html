@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>행복한 크리스마쓰~~</title>
-
+    <title>from 이정</title>
     <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/156725.png">
-    <meta property="og:image" content="https://postfiles.pstatic.net/MjAyMDEyMjJfNDgg/MDAxNjA4NjI5MDI3MzIw.53PtHq2LGlM5sL14lRiFcH2i3IwjxgCVZzL2btRdYTog.hmshN-jhuwCNFPz2wLRKrvGHMSGEIb8XPXdRBNK8Uvsg.JPEG.eezuei/Zoom_%ED%9A%8C%EC%9D%98_%EC%B0%B8%EA%B0%80%EC%9E%90_ID__146636_2020-12-22_%EC%98%A4%ED%9B%84_6_11_07.jpg?type=w966">
-<meta property="og:title" content="MERRY CHRISTMAS">
-<meta property="og:description" content="HO! HO! HO!">
+    <meta property="og:image" content="https://postfiles.pstatic.net/MjAyMDEyMjRfMjI2/MDAxNjA4NzM3NjQ5NDQ1.dLGllkq6EZNg7DefphYu2yRvzffRpxBWj4fa-kT8xbMg.EKwZNykI4dbxnF1dZSKi2CnKjVa0ipNotd10y9eKx-Mg.JPEG.hij0515/Zoom_%ED%9A%8C%EC%9D%98_%EC%B0%B8%EA%B0%80%EC%9E%90_ID__146636_2020-12-22_%EC%98%A4%ED%9B%84_6_11_07.jpg?type=w966">
+    <meta property="og:title" content="MERRY CHRISTMAS">
+    <meta property="og:description" content="HO! HO! HO!">
+    <link rel="stylesheet" href="styles.css"></link>
     <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet"> 
     
     <!-- sound -->
 <audio id='audio_play' src='./We Wish You a Merry Christmas.mp3'></audio> 
@@ -31,9 +27,19 @@ function play() {
 } 
 </script>
     <style>
+        @font-face {
+            font-family: 'NeoDunggeunmo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'NeoDunggeunmo';
+        }
         body {
-            background-color: #9b070f;
-            font-family: 'Langar', cursive;
+            background-color: #830000;
+            
         }
 
         .envelope {
@@ -59,18 +65,18 @@ function play() {
         }
         .rtan{
             background-color:white;
-
+            border-radius: 100px;
             width: 300px;
             height:300px;
 
-            background-image: url('https://i.pinimg.com/originals/18/a7/fa/18a7fa06368aae18b685fcea165c44c3.gif');
+            background-image:url(santa.gif);
             background-size: cover;
             background-position: center;
 
             margin: 80px auto 0px auto;
-
+            cursor:pointer;
             
-            box-shadow:0px 0px 10px 0px rgb(252, 248, 4);
+            box-shadow:0px 0px 10px 0px rgb(4, 215, 252);
             
         }
         h1{
@@ -89,26 +95,31 @@ function play() {
 
             color:brown;
             padding:20px;
-            font-family: 'Black And White Picture', sans-serif;
 
-            font-size:20px;
-            line-height:30px;
+            font-size:15px;
+            line-height:20px;
 
             box-shadow:0px 0px 10px 0px white;
         }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -10;
+        }
         .treeani{
             width:440px;
-            height:250px;
+            height:280px;
             float:left;
-            margin-top:40px;
+            margin-top:0;
             cursor:pointer;
         }
         .treeanni{
             float:left;
             width:440px;
-            height:250px;
+            height:280px;
             cursor:pointer;
-            margin-top:40px;
+            margin-top:0;
         }
         .from{
             text-align:right;
@@ -116,17 +127,19 @@ function play() {
         }
         .easter{
             float:left;
-            font-size:10px;
+            font-size:5px;
             text-align:right;
-            margin:0 0 0 0;
+            margin-left:180px;
+            margin-top:0;
+            margin-bottom:0;
             line-height:15px;
             
         }
         .paper{
             float:left;
-            font-size:15px;
+            font-size:13px;
             text-align:left;
-            margin:0 0 0 0;
+            margin:10px 0 0 0;
             cursor:pointer;
             color:blueviolet;
         }
@@ -166,35 +179,97 @@ function play() {
         function paper() {
             window.location.href='https://rollingpaper.site/rolls/414189?editable=true'
         }
+        function bear() {
+            window.location.href='https://postfiles.pstatic.net/MjAyMDEyMjRfMTgg/MDAxNjA4NzM5MDk0Mzg4.2i0Y4wzVmP7RV4ytaYAWQeb_1WVAzLrH8Wl2LCneJMQg.nhalp5QybDQYIyjJEl8X603VyezrFCnpIiPMUshx-FUg.PNG.hij0515/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C.png?type=w966'
+        }
     </script>    
    
 </head>
 
 <body>
+    <canvas id='canv'></canvas>
     <div class="letter-close">
         <div class="envelope" onclick="open_letter()"></div>
-        <h2 class="envelope-msg">☝</h2>
+        <h2 class="envelope-msg">상자를 열어보세요!</h2>
     </div>
 
     <div class="letter-open">
-        <div class="rtan" ></div>
-    <h1>merry christmas and a happy new year</h1>
-    <img class="treeani" onclick="play()" src='ddddstet.png'>
+        <div class="rtan" onclick="bear()" ></div>
+    <h1>merry christmas and a happy new year!</h1>
+    <img class= "treeani" onclick="play()" src='ddddstet.png'>
     <div class="messagebox">
-        안녕하십니까 허이정입니다 <br />
+        안녕하십니까 허이정입니다. <br />
         크리스마스를 기념하여 <br />
         이런 것을 한 번 만들어보게 되었습니다. <br />
         모두들 건강 잘 챙기시고 <br />
         언젠가...안전한 세상이 오면 만납시다. <br />
         줌으로는 언제든지 마음껏 만나요 ^^<br />
         <p class="from">2020년의 크리스마스 </p>
-        <p class='paper' onclick="paper()">(여기) 누르면 방명록 같은 게 있으니<br>한 번 놀러오십쇼*^^*</p>
-        <p class="easter" ><br><br>양 옆의 🎄,,<br>눌러보고 싶지 않나요?</p>
+        <p class='paper' onclick="paper()">(여기) 누르면 방명록이 있으니<br>한 번 놀러오십쇼*^^*</p>
+        <p class="easter" >🎄를<br>눌러보세요!</p>
     </div>
     <img class="treeanni" onclick="go_rtan()" src='cfhd.png'>
     
     </div>
-    
+    <script>
+        var c = document.getElementById('canv'),
+            $ = c.getContext("2d");
+        var w = c.width = window.innerWidth,
+            h = c.height = window.innerHeight;
+
+        Snowy();
+        function Snowy() {
+            var snow, arr = [];
+            var num = 600, tsc = 1, sp = 1;
+            var sc = 1.3, t = 0, mv = 20, min = 1;
+            for (var i = 0; i < num; ++i) {
+                snow = new Flake();
+                snow.y = Math.random() * (h + 50);
+                snow.x = Math.random() * w;
+                snow.t = Math.random() * (Math.PI * 2);
+                snow.sz = (100 / (10 + (Math.random() * 100))) * sc;
+                snow.sp = (Math.pow(snow.sz * .8, 2) * .15) * sp;
+                snow.sp = snow.sp < min ? min : snow.sp;
+                arr.push(snow);
+            }
+            go();
+            function go() {
+                window.requestAnimationFrame(go);
+                $.clearRect(0, 0, w, h);
+                $.fillStyle = 'hsla(242, 95%, 3%, 1)';
+                $.fillRect(0, 0, w, h);
+                $.fill();
+                for (var i = 0; i < arr.length; ++i) {
+                    f = arr[i];
+                    f.t += .05;
+                    f.t = f.t >= Math.PI * 2 ? 0 : f.t;
+                    f.y += f.sp;
+                    f.x += Math.sin(f.t * tsc) * (f.sz * .3);
+                    if (f.y > h + 50) f.y = -10 - Math.random() * mv;
+                    if (f.x > w + mv) f.x = - mv;
+                    if (f.x < - mv) f.x = w + mv;
+                    f.draw();
+                }
+            }
+            function Flake() {
+                this.draw = function () {
+                    this.g = $.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.sz);
+                    this.g.addColorStop(0, 'hsla(255,255%,255%,1)');
+                    this.g.addColorStop(1, 'hsla(255,255%,255%,0)');
+                    $.moveTo(this.x, this.y);
+                    $.fillStyle = this.g;
+                    $.beginPath();
+                    $.arc(this.x, this.y, this.sz, 0, Math.PI * 2, true);
+                    $.fill();
+                }
+            }
+        }
+        /*________________________________________*/
+        window.addEventListener('resize', function () {
+            c.width = w = window.innerWidth;
+            c.height = h = window.innerHeight;
+        }, false);
+    </script>
 </body>
 
 </html>
